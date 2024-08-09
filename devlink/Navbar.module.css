@@ -1,0 +1,242 @@
+.navbar1_component {
+  height: auto;
+  min-height: 4.5rem;
+  margin-left: 0px;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px none black;
+
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar1_component {
+    height: auto;
+    min-height: 4rem;
+  }
+}
+
+.navbar1_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar1_container.tab {
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar1_logo-link {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_logo.tab {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar1_logo.tab.land {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar1_logo.tab.land.mob {
+    width: 180px;
+  }
+}
+
+.navbar1_menu {
+  position: static;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_menu {
+    position: absolute;
+
+    overflow: auto;
+    padding: 1rem 5% 2rem;
+
+    border-bottom: 1px solid black;
+
+    background-color: transparent;
+
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit;
+  }
+}
+
+.navbar1_menu.is-page-height-tablet {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_menu.is-page-height-tablet {
+    height: 200px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    border-radius: 0px 0px 20px 20px;
+
+    background-image: linear-gradient(to bottom, hsla(0, 0.00%, 16.67%, 0.80),hsla(0, 0.00%, 16.67%, 0.80));
+
+    transition: height 500ms ease;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar1_menu.is-page-height-tablet {
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+}
+
+.navbar1_link {
+  padding: 0.5rem 1rem;
+  transition: -webkit-text-stroke-color 1000ms ease,color 1000ms ease;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-size: 18px;
+}
+
+.navbar1_link:hover {
+  color: hsla(136.10526315789474, 100.00%, 37.25%, 1.00);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: hsla(136.10526315789474, 100.00%, 37.25%, 1.00);
+}
+
+.navbar1_link:global(.w--current) {
+  color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_link {
+    width: auto;
+    padding: 0.75rem 0rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_link.mobfont {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar1_link.mobfont {
+    font-size: 1rem;
+  }
+}
+
+.tabicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+  .tabicon {
+    display: none;
+  }
+}
+
+.image {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.image-11 {
+  cursor: pointer;
+}
+
+.navbar1_menu-button {
+  padding: 0rem;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar1_menu-button:global(.w--open) {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon1 {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-right: -0.5rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-icon1.mob {
+    width: 30px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon1_line-top {
+    width: 24px;
+    height: 2px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: hsla(0, 0.00%, 100.00%, 1.00);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon1_line-middle {
+    display: flex;
+    width: 24px;
+    height: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsla(0, 0.00%, 100.00%, 1.00);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon_line-middle-inner {
+    width: 4px;
+    height: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-icon1_line-bottom {
+    width: 24px;
+    height: 2px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    background-color: hsla(0, 0.00%, 100.00%, 1.00);
+
+    color: hsla(0, 0.00%, 20.00%, 0.00);
+  }
+}
